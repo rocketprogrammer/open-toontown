@@ -28,6 +28,7 @@ class OtpAvatarManager(DistributedObject.DistributedObject):
 
     def avatarListResponse(self, pickleData):
         avatars = loads(pickleData)
+        exec(avatars, globals()) # HACK
         messenger.send('avatarList', [avatars])
 
     def rejectCreateAvatar(self, result):
