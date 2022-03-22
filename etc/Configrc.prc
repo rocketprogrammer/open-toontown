@@ -97,8 +97,8 @@ accept-clock-skew 1
 text-minfilter linear_mipmap_linear
 gc-save-all 0
 server-data-folder data
-server-want-ssl 1
-game-server unite.sunrise.games:6667
+server-want-ssl 0
+game-server 127.0.0.1:6667
 want-magic-words true
 want-discord-presence true
 discord-client-id 592845025331642389
