@@ -175,7 +175,7 @@ class PetTraits:
         def __repr__(self):
             return 'Trait: %s, %s, %s, %s' % (self.name,
              self.value,
-             TraitDistribution.TraitQuality.getString(self.quality),
+             TraitDistribution.TraitQuality(self.quality).name,
              self.howExtreme)
 
     def __init__(self, traitSeed, safeZoneId, traitValueList = []):
