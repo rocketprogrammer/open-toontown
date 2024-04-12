@@ -98,7 +98,7 @@ text-minfilter linear_mipmap_linear
 gc-save-all 0
 server-data-folder data
 server-want-ssl true
-game-server 127.0.0.1:6665
+game-server 127.0.0.1:6667
 want-magic-words true
 want-discord-presence false
 discord-client-id 592845025331642389

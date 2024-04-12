@@ -14,10 +14,6 @@ if strtobool(os.getenv("USE_LIVE_SERVER")):
     # Production environment
     loadPrcFileData("Override Client Config",
                     "game-server unite.sunrise.games:6667")
-else:
-    # Development environment
-    loadPrcFileData("Override Client Config",
-                    "server-want-ssl false")
 
 from toontown.launcher.QuickLauncher import QuickLauncher
 launcher = QuickLauncher()
