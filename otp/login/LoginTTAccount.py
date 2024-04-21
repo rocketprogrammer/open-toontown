@@ -12,8 +12,8 @@ class LoginTTAccount(LoginBase.LoginBase):
         self.useTTSpecificLogin = base.config.GetBool('tt-specific-login', 0)
         self.notify.info('self.useTTSpecificLogin =%s' % self.useTTSpecificLogin)
 
-    def supportsAuthenticateDelete(self):
-        return False if __debug__ else True
+    def supportsAuthenticateDelete(self) -> bool:
+        return not __debug__
 
     def supportsRelogin(self):
         return 1
