@@ -1,4 +1,4 @@
-import random
+from libsunrise import random
 from . import PlayingCardGlobals
 from toontown.minigame.PlayingCard import PlayingCardBase
 
