@@ -1,3 +1,4 @@
 pytz
 pypresence
 requests
+git+https://gitlab.com/sunrisemmos/libsunrise
