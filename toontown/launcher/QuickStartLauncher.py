@@ -7,10 +7,10 @@ else:
 
 
 from panda3d.core import loadPrcFileData
-from distutils.util import strtobool
+import json
 import os
 
-if strtobool(os.getenv("USE_LIVE_SERVER")):
+if json.loads(os.getenv("USE_LIVE_SERVER").lower()):
     # Production environment
     loadPrcFileData("Override Client Config",
                     "game-server unite.sunrise.games:6667")
