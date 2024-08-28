@@ -17,6 +17,7 @@ from . import ToonInteriorColors
 from toontown.hood import ZoneUtil
 from toontown.toon import ToonDNA
 from toontown.toon import ToonHead
+from panda3d.core import Point3, CollisionSphere, CollisionNode, BitMask32, CollisionHandlerEvent
 
 class DistributedToonHallInterior(DistributedToonInterior):
 
