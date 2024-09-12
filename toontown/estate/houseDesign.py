@@ -1,5 +1,6 @@
 from direct.directtools.DirectSelection import *
-from direct.directtools.DirectUtil import ROUND_TO
+from direct.directtools.DirectUtil import ROUND_TO, CLAMP
+from direct.directtools.DirectGlobals import SKIP_BACKFACE, SKIP_ALL, SKIP_CAMERA, SKIP_UNPICKABLE
 from direct.directtools.DirectGeometry import LineNodePath
 from direct.gui.DirectGui import *
 from panda3d.core import *
